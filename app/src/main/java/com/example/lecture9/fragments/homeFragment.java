@@ -26,7 +26,7 @@ public class homeFragment extends Fragment {
         final EditText etReceiveData =root.findViewById(R.id.etReceiveData);
 
        Bundle bundle = getArguments();
-       etReceiveData.setText(bundle.getString("username"));
+       etReceiveData.setText(bundle.getString("userName"));
         return root;
     }
 }

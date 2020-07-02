@@ -34,8 +34,8 @@ public class loginFragment extends Fragment {
                 Fragment fragment = new homeFragment();
                 fragment.setArguments(bundle);
 
-                getActivity().getSupportFragmentManager().beginTransaction().
-                        replace(R.id.frContainer, fragment).commit();
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .addToBackStack(null).replace(R.id.frContainer, fragment).commit();
             }
         });
 
