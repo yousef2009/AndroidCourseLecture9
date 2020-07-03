@@ -3,9 +3,9 @@ package com.example.lecture9.model;
 public class Student {
     private int ID;
     private String name;
-    private String average;
+    private double average;
 
-    public Student(int ID, String name, String average) {
+    public Student(int ID, String name, double average) {
         this.ID = ID;
         this.name = name;
         this.average = average;
@@ -27,11 +27,11 @@ public class Student {
         this.name = name;
     }
 
-    public String getAverage() {
+    public double getAverage() {
         return average;
     }
 
-    public void setAverage(String average) {
+    public void setAverage(double average) {
         this.average = average;
     }
 }

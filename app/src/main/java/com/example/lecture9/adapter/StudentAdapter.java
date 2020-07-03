@@ -36,7 +36,7 @@ public class StudentAdapter extends RecyclerView.Adapter<StudentAdapter.MyViewHo
     public void onBindViewHolder(@NonNull MyViewHolder holder, final int position) {
         holder.tvID.setText(data.get(position).getID());
         holder.tvName.setText(String.valueOf(data.get(position).getName()));
-        holder.tvAverage.setText(data.get(position).getAverage());
+        holder.tvAverage.setText(String.valueOf(data.get(position).getAverage()));
 
         holder.tvName.setOnClickListener(new View.OnClickListener() {
             @Override
