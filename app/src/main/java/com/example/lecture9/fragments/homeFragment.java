@@ -3,6 +3,7 @@ package com.example.lecture9.fragments;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Handler;
 import android.view.LayoutInflater;
@@ -22,11 +23,14 @@ public class homeFragment extends Fragment {
         // Inflate the layout for this fragment
         View root = inflater.inflate(R.layout.fragment_home, container, false);
 
-
+/*
         final EditText etReceiveData =root.findViewById(R.id.etReceiveData);
 
        Bundle bundle = getArguments();
        etReceiveData.setText(bundle.getString("userName"));
+
+*/
+        RecyclerView rvStudent = getActivity().findViewById(R.id.rvStudent);
         return root;
     }
 }
